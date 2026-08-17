@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>NexaAI — Your AI Assistant, Built for the Way You Work</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="grid-bg" aria-hidden="true"></div>
+
+<!-- ===== NAVBAR ===== -->
+<header class="navbar" id="navbar">
+  <div class="container navbar-inner">
+    <a href="#top" class="logo">
+      <span class="logo-mark">✦</span>
+      <span class="logo-text">NexaAI</span>
+    </a>
+
+    <nav class="nav-links" id="navLinks">
+      <a href="#features">Features</a>
+      <a href="#how-it-works">How It Works</a>
+      <a href="#pricing">Pricing</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+
+    <div class="navbar-actions">
+      <a href="#" class="btn btn-ghost">Log in</a>
+      <a href="#chat-demo" class="btn btn-primary">Get Started <span class="arrow">→</span></a>
+    </div>
+
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<!-- ===== HERO ===== -->
+<section class="hero" id="top">
+  <div class="blob blob-1" aria-hidden="true"></div>
+  <div class="blob blob-2" aria-hidden="true"></div>
+
+  <div class="container hero-inner">
+    <div class="hero-copy" data-reveal>
+      <span class="eyebrow">✨ Meet the everyday AI copilot</span>
+      <h1>Your AI Assistant.<br><span class="text-gradient">Built for the Way You Work.</span></h1>
+      <p class="hero-sub">NexaAI helps you write, analyze, brainstorm, and get answers instantly — all from one intelligent workspace.</p>
+
+      <div class="hero-actions">
+        <a href="#chat-demo" class="btn btn-primary btn-lg">Start Chatting <span class="arrow">→</span></a>
+        <a href="#features" class="btn btn-secondary btn-lg">Explore Features</a>
+      </div>
+    </div>
+
+    <div class="hero-visual" data-reveal>
+      <div class="chat-glow" aria-hidden="true"></div>
+      <div class="chat-window glass">
+        <div class="chat-header">
+          <span class="chat-title"><span class="chat-star">✨</span> NexaAI</span>
+          <span class="chat-dots">•••</span>
+        </div>
+        <div class="chat-body">
+          <div class="bubble bubble-user">
+            <span class="bubble-avatar">👤</span>
+            <p>Summarize this document</p>
+          </div>
+          <div class="bubble bubble-bot">
+            <span class="bubble-avatar">🤖</span>
+            <p>Sure! Here's a quick summary of the key points — three main findings, one risk to watch, and a clear next step.</p>
+          </div>
+          <div class="typing-indicator" id="heroTyping">
+            <span class="bubble-avatar">🤖</span>
+            <span class="dot"></span><span class="dot"></span><span class="dot"></span>
+          </div>
+        </div>
+        <div class="chat-input">
+          <input type="text" placeholder="Ask NexaAI anything..." disabled />
+          <button class="send-btn" aria-label="Send">➤</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== STATS ===== -->
+<section class="stats">
+  <div class="container stats-grid" data-reveal>
+    <div class="stat-item">
+      <strong>10K+</strong>
+      <span>Users</span>
+    </div>
+    <div class="stat-item">
+      <strong>98%</strong>
+      <span>Accuracy</span>
+    </div>
+    <div class="stat-item">
+      <strong>24/7</strong>
+      <span>Available</span>
+    </div>
+    <div class="stat-item">
+      <strong>50+</strong>
+      <span>Integrations</span>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FEATURES ===== -->
+<section class="features" id="features">
+  <div class="container">
+    <div class="section-head" data-reveal>
+      <span class="eyebrow eyebrow-center">Capabilities</span>
+      <h2>Everything You Need, <span class="text-gradient">Powered by AI</span></h2>
+    </div>
+
+    <div class="features-grid">
+      <div class="feature-card glass" data-reveal>
+        <div class="feature-icon">💬</div>
+        <h3>Smart Conversations</h3>
+        <p>Have natural conversations and get intelligent responses instantly.</p>
+      </div>
+      <div class="feature-card glass" data-reveal>
+        <div class="feature-icon">✍️</div>
+        <h3>AI Writing Assistant</h3>
+        <p>Generate emails, articles, captions, ideas and more.</p>
+      </div>
+      <div class="feature-card glass" data-reveal>
+        <div class="feature-icon">📄</div>
+        <h3>Document Analysis</h3>
+        <p>Upload documents and let NexaAI summarize and analyze them.</p>
+      </div>
+      <div class="feature-card glass" data-reveal>
+        <div class="feature-icon">📊</div>
+        <h3>Data Insights</h3>
+        <p>Turn complex information into simple, useful insights.</p>
+      </div>
+      <div class="feature-card glass" data-reveal>
+        <div class="feature-icon">🧠</div>
+        <h3>Context-Aware AI</h3>
+        <p>NexaAI understands your conversation context for more relevant responses.</p>
+      </div>
+      <div class="feature-card glass" data-reveal>
+        <div class="feature-icon">⚡</div>
+        <h3>Instant Answers</h3>
+        <p>Get quick answers without switching between multiple tools.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== WHY NEXAAI ===== -->
+<section class="why-nexaai">
+  <div class="container why-inner">
+    <div class="why-visual" data-reveal>
+      <div class="chat-glow chat-glow-alt" aria-hidden="true"></div>
+      <div class="mini-window glass">
+        <div class="chat-header">
+          <span class="chat-title"><span class="chat-star">✨</span> NexaAI</span>
+          <span class="chat-dots">•••</span>
+        </div>
+        <div class="chat-body">
+          <div class="bubble bubble-user">
+            <span class="bubble-avatar">👤</span>
+            <p>Draft a follow-up email</p>
+          </div>
+          <div class="bubble bubble-bot">
+            <span class="bubble-avatar">🤖</span>
+            <p>On it — here's a warm, concise follow-up that references your last call and proposes next steps.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="why-copy" data-reveal>
+      <span class="eyebrow">The difference</span>
+      <h2>More Than a Chatbot.<br><span class="text-gradient">Your Everyday AI Copilot.</span></h2>
+      <ul class="why-list">
+        <li><span class="check">✓</span> Understands context</li>
+        <li><span class="check">✓</span> Saves time</li>
+        <li><span class="check">✓</span> Works across tasks</li>
+        <li><span class="check">✓</span> Simple to use</li>
+        <li><span class="check">✓</span> Available anytime</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ===== HOW IT WORKS ===== -->
+<section class="how-it-works" id="how-it-works">
+  <div class="container">
+    <div class="section-head" data-reveal>
+      <span class="eyebrow eyebrow-center">Process</span>
+      <h2>From Question to Answer <span class="text-gradient">in Seconds</span></h2>
+    </div>
+
+    <div class="steps">
+      <div class="step glass" data-reveal>
+        <span class="step-number">01</span>
+        <h3>Ask</h3>
+        <p>Type your question or upload your content.</p>
+      </div>
+      <div class="step-connector" aria-hidden="true">
+        <span class="flow-label">You</span>
+      </div>
+      <div class="step glass" data-reveal>
+        <span class="step-number">02</span>
+        <h3>NexaAI Thinks</h3>
+        <p>Our AI analyzes your request and understands the context.</p>
+      </div>
+      <div class="step-connector" aria-hidden="true">
+        <span class="flow-label">NexaAI</span>
+      </div>
+      <div class="step glass" data-reveal>
+        <span class="step-number">03</span>
+        <h3>Get Results</h3>
+        <p>Receive an intelligent response in seconds.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== AI WORKSPACE PREVIEW ===== -->
+<section class="workspace" id="chat-demo">
+  <div class="container">
+    <div class="section-head" data-reveal>
+      <span class="eyebrow eyebrow-center">Live Preview</span>
+      <h2>Your AI <span class="text-gradient">Workspace</span></h2>
+    </div>
+
+    <div class="workspace-panel glass" data-reveal>
+      <aside class="workspace-sidebar">
+        <div class="ws-logo"><span class="logo-mark">✦</span> NexaAI</div>
+        <button class="ws-new-chat">+ New Chat</button>
+        <div class="ws-nav-item ws-nav-active">History</div>
+        <div class="ws-history-item">Summarize contract.pdf</div>
+        <div class="ws-history-item">5 project ideas</div>
+        <div class="ws-history-item">Weekly report draft</div>
+        <div class="ws-spacer"></div>
+        <div class="ws-nav-item">Settings</div>
+      </aside>
+
+      <div class="workspace-main">
+        <h3 class="ws-greeting">Good morning, Alex 👋</h3>
+        <p class="ws-subgreeting">How can I help you today?</p>
+
+        <div class="ws-quick-actions">
+          <button class="ws-action-btn" data-prompt="Write a product announcement email">✍️ Write</button>
+          <button class="ws-action-btn" data-prompt="Analyze this quarter's growth trend">📊 Analyze</button>
+          <button class="ws-action-btn" data-prompt="Write a function to debounce input">💻 Code</button>
+        </div>
+
+        <div class="ws-body" id="wsBody"></div>
+
+        <div class="chat-input ws-input">
+          <input type="text" id="wsInput" placeholder="Ask NexaAI anything..." />
+          <button class="send-btn" id="wsSend" aria-label="Send">➤</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== PRICING ===== -->
+<section class="pricing" id="pricing">
+  <div class="container">
+    <div class="section-head" data-reveal>
+      <span class="eyebrow eyebrow-center">Pricing</span>
+      <h2>Simple Plans, <span class="text-gradient">No Surprises</span></h2>
+    </div>
+
+    <div class="pricing-grid">
+      <div class="price-card glass" data-reveal>
+        <h3>Free</h3>
+        <div class="price"><span class="amount">₹0</span><span class="period">/month</span></div>
+        <ul class="price-features">
+          <li>50 AI messages</li>
+          <li>Basic AI assistance</li>
+          <li>Chat history</li>
+        </ul>
+        <a href="#" class="btn btn-secondary price-cta">Get Started</a>
+      </div>
+
+      <div class="price-card price-card-featured glass" data-reveal>
+        <span class="price-badge">⭐ Most Popular</span>
+        <h3>Pro</h3>
+        <div class="price"><span class="amount">₹499</span><span class="period">/month</span></div>
+        <ul class="price-features">
+          <li>Unlimited conversations</li>
+          <li>Document analysis</li>
+          <li>Advanced AI</li>
+          <li>Priority responses</li>
+        </ul>
+        <a href="#" class="btn btn-primary price-cta">Start Free Trial</a>
+      </div>
+
+      <div class="price-card glass" data-reveal>
+        <h3>Business</h3>
+        <div class="price"><span class="amount">₹999</span><span class="period">/month</span></div>
+        <ul class="price-features">
+          <li>Team workspace</li>
+          <li>Advanced analytics</li>
+          <li>Integrations</li>
+          <li>Priority support</li>
+        </ul>
+        <a href="#" class="btn btn-secondary price-cta">Contact Us</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== TESTIMONIALS ===== -->
+<section class="testimonials">
+  <div class="container">
+    <div class="section-head" data-reveal>
+      <span class="eyebrow eyebrow-center">Testimonials</span>
+      <h2>Loved by <span class="text-gradient">Everyday Users</span></h2>
+    </div>
+
+    <div class="testimonial-grid">
+      <div class="testimonial-card glass" data-reveal>
+        <p class="quote">"NexaAI has completely changed how I handle my daily tasks."</p>
+        <div class="testimonial-author">
+          <span class="avatar">RK</span>
+          <div>
+            <strong>Riya Kapoor</strong>
+            <span>Product Designer</span>
+          </div>
+        </div>
+      </div>
+      <div class="testimonial-card glass" data-reveal>
+        <p class="quote">"It feels like having a research assistant who never sleeps."</p>
+        <div class="testimonial-author">
+          <span class="avatar">AS</span>
+          <div>
+            <strong>Arjun Sen</strong>
+            <span>Founder, Studio Loop</span>
+          </div>
+        </div>
+      </div>
+      <div class="testimonial-card glass" data-reveal>
+        <p class="quote">"Document analysis alone saves me hours every week."</p>
+        <div class="testimonial-author">
+          <span class="avatar">MP</span>
+          <div>
+            <strong>Meera Pillai</strong>
+            <span>Operations Lead</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FAQ ===== -->
+<section class="faq" id="faq">
+  <div class="container">
+    <div class="section-head" data-reveal>
+      <span class="eyebrow eyebrow-center">FAQ</span>
+      <h2>Questions? <span class="text-gradient">We've Got Answers</span></h2>
+    </div>
+
+    <div class="faq-list" data-reveal>
+      <div class="faq-item glass">
+        <button class="faq-question">
+          What is NexaAI?
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-answer"><p>NexaAI is an AI workspace that helps you write, analyze, brainstorm, and get answers instantly — all in one place.</p></div>
+      </div>
+      <div class="faq-item glass">
+        <button class="faq-question">
+          Is NexaAI free?
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-answer"><p>Yes — the Free plan gives you 50 AI messages a month with no cost. Paid plans unlock unlimited use and advanced features.</p></div>
+      </div>
+      <div class="faq-item glass">
+        <button class="faq-question">
+          Can I upload documents?
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-answer"><p>Yes, Pro and Business plans let you upload documents for NexaAI to summarize and analyze.</p></div>
+      </div>
+      <div class="faq-item glass">
+        <button class="faq-question">
+          Is my data secure?
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-answer"><p>Your conversations and documents are encrypted and never shared with third parties.</p></div>
+      </div>
+      <div class="faq-item glass">
+        <button class="faq-question">
+          Can I cancel my subscription?
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-answer"><p>Absolutely — you can cancel anytime from your account settings, no questions asked.</p></div>
+      </div>
+      <div class="faq-item glass">
+        <button class="faq-question">
+          Does NexaAI support multiple languages?
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-answer"><p>Yes, NexaAI understands and responds in multiple languages out of the box.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FINAL CTA ===== -->
+<section class="final-cta">
+  <div class="cta-glow" aria-hidden="true"></div>
+  <div class="container">
+    <div data-reveal>
+      <span class="cta-icon">✦</span>
+      <h2>Ready to Work Smarter?</h2>
+      <p>Start your conversation with NexaAI today.</p>
+      <a href="#chat-demo" class="btn btn-primary btn-lg">Start Chatting <span class="arrow">→</span></a>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer class="footer">
+  <div class="container footer-grid">
+    <div class="footer-brand">
+      <a href="#top" class="logo">
+        <span class="logo-mark">✦</span>
+        <span class="logo-text">NexaAI</span>
+      </a>
+      <p>Your intelligent AI workspace.</p>
+    </div>
+
+    <div class="footer-col">
+      <h4>Product</h4>
+      <a href="#features">Features</a>
+      <a href="#pricing">Pricing</a>
+      <a href="#">Integrations</a>
+    </div>
+
+    <div class="footer-col">
+      <h4>Company</h4>
+      <a href="#">About</a>
+      <a href="#">Contact</a>
+      <a href="#">Careers</a>
+    </div>
+
+    <div class="footer-col">
+      <h4>Resources</h4>
+      <a href="#">Help Center</a>
+      <a href="#faq">FAQ</a>
+      <a href="#">Documentation</a>
+    </div>
+  </div>
+  <div class="container footer-bottom">
+    <p>&copy; 2026 NexaAI. All rights reserved.</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
